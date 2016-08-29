@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">长江时代</string>
+    <string name="home">首页</string>
+    <string name="saled">销售</string>
+    <string name="warehourse">库存</string>
+    <string name="basic">基础</string>
+    <string name="summary">统计</string>
+    <string name="dialog_sure_quit">确认退出?</string>
+    <string name="rember_password">记住密码</string>
+    <string name="aoto_login">自动登录</string>
+    <string name="protocol">我接受</string>
+    <string name="login">登           录</string>
+    <string name="protocol_info">《长江时代使用 协议》</string>
+    <string name="shortcut_menu_title">快捷菜单</string>
+    <string name="save">保存</string>
+    <string name="code">将条形码/二维码置于框内</string>
+    <string name="label_title_total">合计:</string>
+</resources>

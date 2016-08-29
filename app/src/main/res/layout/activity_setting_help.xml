@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/layout_commen_title"/>
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_top"
+        android:background="@mipmap/bg"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_setting_person"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/list_bg"
+            android:drawableLeft="@mipmap/setting_person"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="个人信息"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <Button
+            android:id="@+id/btn_setting_company"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="1dp"
+            android:background="@mipmap/list_bg"
+            android:drawableLeft="@mipmap/setting_company"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="公司信息"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <Button
+            android:id="@+id/btn_setting_staff"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/list_bg"
+            android:drawableLeft="@mipmap/setting_staff"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="员工信息"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <Button
+            android:id="@+id/btn_setting_help"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/list_bg"
+            android:drawableLeft="@mipmap/setting_help"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="帮助中心"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <Button
+            android:id="@+id/btn_setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="1dp"
+            android:background="@mipmap/list_bg"
+            android:drawableLeft="@mipmap/setting_about"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="关于"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            android:layout_marginTop="32dp"
+            android:background="@mipmap/bg_btn"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

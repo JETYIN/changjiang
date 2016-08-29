@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/TitleStyle">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@mipmap/top_back"/>
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@mipmap/top_add"/>
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/add"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@mipmap/top_search_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="销售历史"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_blue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="默认"
+            android:textColor="@drawable/text_selector"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/sale"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_blue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已销售"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_selector"/>
+
+        <RadioButton
+            android:id="@+id/draft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_blue"
+            android:button="@null"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="草稿"
+            android:textColor="@drawable/text_selector"/>
+
+        <RadioButton
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_blue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="撤销"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_selector"/>
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/allsales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/ListViewStyle"
+        android:background="@color/white"
+        android:dividerHeight="16dp"/>
+</LinearLayout>

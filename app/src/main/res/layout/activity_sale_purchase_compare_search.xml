@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_top"
+        style="@style/TitleStyle"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:drawablePadding="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_17sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_below="@+id/title_top"
+        android:background="@drawable/layout_top_bottom_1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_16sp"
+            android:text="商品："/>
+
+        <Spinner
+            android:id="@+id/sp_goods"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@mipmap/spinner_background"></Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_top_bottom_1dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="开始时间"/>
+
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@mipmap/spinner_background"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:hint="请选择开始日期"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_below="@+id/ll2"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="结束时间"/>
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@mipmap/spinner_background"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:hint="请选择结束日期"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/ll2"
+        android:id="@+id/btn_search"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@mipmap/bg_btn"/>
+
+    <LinearLayout
+        android:id="@+id/ll_clean"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/text_grey"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_trash"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        android:text="清除"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_margin"
+        android:text="正品杭州丝绸（6224579）"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="4"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_half_margin"
+            android:text="产地：浙江杭州"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/standar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="3"
+            android:gravity="left|center_vertical"
+            android:text="规格：XXX"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_weight="4"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_half_margin"
+            android:text="调拨数量：47"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/afterCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_weight="4"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_half_margin"
+            android:text="调出前数量： 40"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/beforeCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_weight="3"
+            android:gravity="left|center_vertical"
+            android:text="调入前数量：47"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="1dp">
+
+    <ImageButton
+        android:id="@+id/commodity_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:src="@mipmap/icon_subtract"/>
+
+
+    <EditText
+        android:id="@+id/commodity_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="numberSigned"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_14sp"/>
+
+
+    <ImageButton
+        android:id="@+id/commodity_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:src="@mipmap/icon_add_grey"/>
+</LinearLayout>

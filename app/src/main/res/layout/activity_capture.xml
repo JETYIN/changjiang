@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/layout_commen_title" />
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_top"
+        android:layout_gravity="center"
+        android:background="@color/text_normal" />
+
+    <tech.boshu.changjiangshidai.zxing.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_top"
+        android:layout_marginTop="30dp"
+        android:background="@color/text_normal" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/capture_bottom_btn"
+        android:text="取消"
+        android:textColor="@color/text_light_blue" />
+
+    <tech.boshu.changjiangshidai.libs.view.DrawableLeftCenterButton
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_top"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        android:drawableLeft="@mipmap/capture_top_icon"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:text="将条形码/二维码置于框内"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16sp" />
+
+</RelativeLayout>

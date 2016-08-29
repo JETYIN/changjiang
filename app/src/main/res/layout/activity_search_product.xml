@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg" >
+
+    <LinearLayout
+        android:id="@+id/title_top"
+        style="@style/TitleStyle"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:src="@mipmap/top_back" />
+
+        <FrameLayout
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@mipmap/top_input" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@null"
+                android:drawableLeft="@mipmap/top_search_grey"
+                android:drawablePadding="8dp"
+                android:hint="查找商品"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/text_size_14sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17sp" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_top"
+        android:layout_marginTop="8dp"
+        layout="@layout/layout_common_swiperefresh" />
+
+</RelativeLayout>

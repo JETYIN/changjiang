@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg" android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/select_warehourse_container"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="28dp"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/select_warehourse_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择仓库:"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_12sp"/>
+        <TextView
+            android:id="@+id/selected_warehourse_name"
+            android:layout_toRightOf="@id/select_warehourse_title"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            android:text="请选择仓库"
+            style="@style/WarehourseChoise"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/select_warehourse_container"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <View
+            android:id="@+id/indicator"
+            android:layout_width="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="10dp"
+            android:background="#00a1fb"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@id/indicator"
+            android:layout_alignBottom="@id/indicator"
+            android:layout_toRightOf="@id/indicator"
+            android:text="选择商品"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/text_normal"/>
+        <View
+            android:id="@+id/splitter"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"/>
+
+        <TextView
+            android:id="@+id/selected_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splitter"
+            style="@style/WarehourseChoiseTitle"
+            android:text="商品:"/>
+
+        <TextView
+            android:id="@+id/selected_product_name"
+            android:layout_toRightOf="@id/selected_product_title"
+            android:layout_below="@id/splitter"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:text="请选择商品"
+            style="@style/WarehourseChoiseContent"/>
+
+        <TextView
+            android:id="@+id/selected_area_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selected_product_name"
+            style="@style/WarehourseChoiseTitle"
+            android:text="产地:"/>
+
+        <TextView
+            android:id="@+id/selected_area_name"
+            android:layout_toRightOf="@id/selected_product_title"
+            android:layout_below="@id/selected_product_name"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:text="请选择产地"
+            style="@style/WarehourseChoiseContent"/>
+
+
+        <TextView
+            android:id="@+id/selected_size_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selected_area_name"
+            style="@style/WarehourseChoiseTitle"
+            android:text="规格:"/>
+
+        <TextView
+            android:id="@+id/selected_size_name"
+            android:layout_toRightOf="@id/selected_product_title"
+            android:layout_below="@id/selected_area_name"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:text="请选择规格"
+            style="@style/WarehourseChoiseContent"/>
+
+
+        <TextView
+            android:id="@+id/cur_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selected_size_name"
+            style="@style/WarehourseChoiseTitle"
+            android:text="当前数量:"/>
+        <TextView
+            android:id="@+id/cur_num"
+            android:layout_toRightOf="@id/cur_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selected_size_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="0"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:id="@+id/center_h"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/center_h"
+            android:id="@+id/init_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selected_size_name"
+            style="@style/WarehourseChoiseTitle"
+            android:text="初始化数量:"/>
+
+        <EditText
+            android:id="@+id/init_num"
+            android:layout_toRightOf="@id/init_num_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selected_size_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="28dp"
+            android:inputType="number"
+            android:text="0"/>
+
+        <View
+            android:id="@+id/splitter_2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/init_num"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@id/splitter_2">
+
+            <TextView
+                android:id="@+id/add_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="添加到仓库"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/text_light"
+                android:drawableLeft="@mipmap/warehourse_list_add"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

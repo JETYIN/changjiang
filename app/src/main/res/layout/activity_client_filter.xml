@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_commen_title" />
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_top"
+        android:background="@drawable/layout_top_bottom_1dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/common_margin">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="客服分类"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <Spinner
+                android:id="@+id/sp_client_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@mipmap/spinner_background"
+                android:padding="5dp"></Spinner>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/common_margin">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="最小欠款"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <EditText
+                android:id="@+id/et_arrears_min"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@mipmap/edittext_background"
+                android:gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size_16sp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/common_margin">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="最大欠款"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <EditText
+                android:id="@+id/et_arrears_max"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@mipmap/edittext_background"
+                android:gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size_16sp"></EditText>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll1"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="过滤无欠款客户"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <ToggleButton
+            android:id="@+id/tbtn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:button="@drawable/toggle_button_selector"
+            android:checked="true"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/rl1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/bg_btn"
+        android:text="搜索"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

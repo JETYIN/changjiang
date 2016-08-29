@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/call_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:src="@mipmap/staff_phone"/>
+
+    <ImageButton
+        android:id="@+id/send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/call_phone"
+        android:background="@null"
+        android:src="@mipmap/staff_message"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/send_message">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="某某供应商"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/name"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="负责人：李小鹏"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_12sp"/>
+
+        <TextView
+            android:id="@+id/create_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="8dp"
+            android:text="欠供应商商款：1.00"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_12sp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

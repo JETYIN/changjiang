@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="周转率说明"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="“周转率（turnover rate）”也称“换手率”，指在一定时间内市场中股票转手买卖的频率，是反映股票流通性强弱的指标之一。其计算公式为：
+周转率(换手率)=(某一段时期内的成交量)/(发行总股数)x100%"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@mipmap/bg"/>
+
+    <Button
+        android:id="@+id/affirm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:text="确认"
+        android:textColor="@color/text_blue"
+        android:textSize="16sp"/>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:text="正品杭州丝绸（3232323）"
+        android:textColor="@color/text_light_blue"
+        android:textSize="@dimen/text_size_14sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产地"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="规格"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="单价(元)*数量(条)"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/place_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/size_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="XLL"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23.85"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/text_size_14sp"/>
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*50"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/layout_top_bottom_1dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/common_margin">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="2015-11-11 12:12"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="sk201511111212"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/common_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="柜台现金--"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_receivable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="销售收入"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/common_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="应收金额："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_actual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="400.00"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/common_margin">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="实收金额："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="100.00"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="应收款金额："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="100.00"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/commodity_right_arrow"
+        android:paddingRight="8dp"
+        android:text="核销">
+
+        </TextView>
+
+
+</LinearLayout>

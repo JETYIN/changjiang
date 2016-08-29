@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="整单折扣"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_16sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_edit_text_frame_1dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="折扣（%）："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <EditText
+            android:id="@+id/discount_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/discount"
+            android:background="@null"
+            android:hint="请输入折扣"
+            android:inputType="number"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_bg_green"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_bg_blue"
+            android:text="打折"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CommonLib</string>
+    <string name="network_error_timeout">网络不太给力</string>
+    <string name="network_error_parse">出错啦</string>
+    <string name="network_error_generic">出错啦</string>
+    <string name="loadmore_foot_no_data_tip">已经到底儿了</string>
+    <string name="connect_check">请检查您的网络连接！</string>
+</resources>

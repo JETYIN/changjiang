@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/layout_commen_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:background="@drawable/layout_top_bottom_1dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="开始时间"/>
+
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@mipmap/spinner_background"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="结束时间"/>
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@mipmap/spinner_background"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="单号"/>
+
+            <EditText
+                android:id="@+id/et_bill_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:inputType="numberDecimal"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:background="@mipmap/edittext_background"></EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_below="@+id/ll1"
+        android:layout_margin="40dp"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@mipmap/bg_btn"/>
+
+</RelativeLayout>

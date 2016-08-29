@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/icon_buyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/cho_off" />
+
+    <TextView
+        android:id="@+id/tv_buyer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/icon_buyer"
+        android:text="采购员"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <TextView
+        android:id="@+id/memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_buyer_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/icon_buyer"
+        android:text="负责采购事宜，包括新建商品、采购单、采购退货、库存盘点"
+        android:textColor="@color/text_light"
+        android:textSize="@dimen/text_size_12sp" />
+
+</RelativeLayout>
+
+

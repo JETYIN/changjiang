@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/pop_background"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/sale"
+            android:layout_width="120dp"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:textColor="@color/text_normal"
+            android:text="销售明细"
+            android:textSize="16sp" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#CCCCCC"/>
+    <TextView
+        android:id="@+id/single"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:textColor="@color/text_normal"
+        android:text="按单品汇总"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC"/>
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:textColor="@color/text_normal"
+        android:text="按单据汇总"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC"/>
+
+    <TextView
+        android:id="@+id/supplier"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:textColor="@color/text_normal"
+        android:text="按供应商汇总"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC"/>
+
+    <TextView
+        android:id="@+id/purchase"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:textColor="@color/text_normal"
+        android:text="按采购员汇总"
+        android:textSize="16sp" />
+    </LinearLayout>

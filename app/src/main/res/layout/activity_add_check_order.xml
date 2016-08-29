@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bg">
+
+    <include layout="@layout/layout_commen_title"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/foot_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="合计："
+            android:textColor="@color/text_normal"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/total_price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/total_price"
+            android:text="￥34000"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/total_price_value"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@mipmap/btn_bg_green"
+                android:text="草稿"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@mipmap/btn_bg_blue"
+                android:text="出售"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/title_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/stock_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stockvalue"
+                    android:text="仓库："
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <TextView
+                    android:id="@+id/stockvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_alignLeft="@+id/scancodevalue"
+                    android:layout_toRightOf="@id/stock_name"
+                    android:background="@drawable/bg_icon_frame_1dp"
+                    android:drawableRight="@mipmap/icon_row_down"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="四楼仓库"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/productvalue"
+                    android:text="商品："
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <TextView
+                    android:id="@+id/productvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_alignLeft="@+id/scancodevalue"
+                    android:layout_below="@id/stockvalue"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@id/product"
+                    android:background="@drawable/bg_icon_frame_1dp"
+                    android:drawableRight="@mipmap/icon_row_down"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="苏州丝"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <TextView
+                    android:id="@+id/scancode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/scancodevalue"
+                    android:text="条形码："
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <EditText
+                    android:id="@+id/scancodevalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_below="@id/productvalue"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@id/scancode"
+                    android:background="@drawable/bg_icon_frame_1dp"
+                    android:hint="请输入条形码"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="@dimen/text_size_14sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/common_half_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="盘点数量："
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_icon_frame_1dp"
+                    android:hint=""
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/check_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_weight="1"
+                    android:text="盘点数量：15"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <tech.boshu.changjiangshidai.libs.view.DrawableLeftCenterButton
+                    android:id="@+id/add_check_order"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@mipmap/icon_add_grey"
+                    android:drawablePadding="@dimen/common_margin"
+                    android:padding="16dp"
+                    android:text="添加盘点单"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_right"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/icon_right"
+                    android:text="盘点明细"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:headerDividersEnabled="true"
+                tools:listitem="@layout/adapter_add_check_order"
+                >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="备注"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_icon_frame_1dp"
+                    android:gravity="top"
+                    android:hint="请在这里输入你备注的内容"
+                    android:padding="16dp"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/common_margin"
+                android:text="点击上方选择商品进行盘点"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_14sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:text="正宗杭州丝绸布料(9090909)"
+        android:textSize="@dimen/text_size_14sp" />
+
+
+    <tech.boshu.changjiangshidai.libs.view.AutoHeightListView
+        android:id="@+id/list"
+        style="@style/ListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:fastScrollAlwaysVisible="false"
+        android:footerDividersEnabled="false"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/total_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="￥752.00"
+        android:textColor="@color/text_red"
+        android:textSize="@dimen/text_size_14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toLeftOf="@id/total_money"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/customername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湘西酒厂"
+            android:textColor="@color/text_normal"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/order_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="JGHSHS111232323"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/order_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2015-12-04 12:21:32"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+    </LinearLayout>
+</RelativeLayout>

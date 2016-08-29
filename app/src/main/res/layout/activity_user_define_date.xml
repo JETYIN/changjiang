@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_top"
+        style="@style/TitleStyle">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@mipmap/top_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="8dp"
+            android:text="自定义日期"
+            android:textColor="@color/text_white_0"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:padding="16dp"
+            android:text="关闭"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/start_date_value"
+            android:text="开始日期："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <EditText
+            android:id="@+id/start_date_value"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/start_date"
+            android:background="@drawable/bg_icon_frame_1dp"
+            android:drawableRight="@mipmap/icon_row_down"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/end_date_value"
+            android:text="结束日期："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <EditText
+            android:id="@+id/end_date_value"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignLeft="@+id/pay_way_value"
+            android:layout_below="@id/start_date_value"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/end_date"
+            android:background="@drawable/bg_icon_frame_1dp"
+            android:drawableRight="@mipmap/icon_row_down"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/btn"
+        android:text="查询"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16sp"/>
+</LinearLayout>

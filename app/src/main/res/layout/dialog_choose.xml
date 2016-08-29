@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/copy_sales_order"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:text="复制新增销售"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_16sp"/>
+
+    <Button
+        android:id="@+id/copy_return_order"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:text="复制新增退货"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_16sp"/>
+</LinearLayout>

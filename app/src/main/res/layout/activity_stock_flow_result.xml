@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_commen_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:drawableLeft="@mipmap/stock_flow_result_stock"
+            android:drawablePadding="@dimen/common_half_margin"
+            android:gravity="left"
+            android:minEms="3"
+            android:text="仓库："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_half_margin"
+            android:text="四楼仓库"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:drawableLeft="@mipmap/stock_flow_result_product"
+            android:drawablePadding="@dimen/common_half_margin"
+            android:gravity="left"
+            android:minEms="3"
+            android:text="商品："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:id="@+id/product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_half_margin"
+            android:text="XXXXXX商品"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:drawableLeft="@mipmap/stock_flow_result_date"
+            android:drawablePadding="@dimen/common_half_margin"
+            android:gravity="left"
+            android:minEms="3"
+            android:text="日期："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_half_margin"
+            android:text="2016-01-02至2016-01-06"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/ListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@color/white"
+        android:fastScrollAlwaysVisible="false"
+        android:footerDividersEnabled="false"
+        android:scrollbars="none"
+        tools:listitem="@layout/adapter_stock_flow_result"/>
+
+</LinearLayout>

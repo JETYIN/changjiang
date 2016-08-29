@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/goods_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@mipmap/goods_example"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/goods_icon"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="新款假两件男装长袖T恤翻领男士T恤格子"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_14sp"/>
+
+            <TextView
+                android:id="@+id/goods_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="801"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_14sp"/>
+
+            <TextView
+                android:id="@+id/repertory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="当前库存：12"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="产地"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:background="@mipmap/background_product_address"
+            android:gravity="center"
+            android:text="上海"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="规格"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:background="@mipmap/background_product_address"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="800*800,黄色"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/product_choose_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/product_choose_number_value"
+            android:text="数量："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <EditText
+            android:id="@+id/product_choose_number_value"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/product_choose_number"
+            android:background="@drawable/bg_edit_text_frame_1dp"
+            android:inputType="number"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/product_choose_number_value"
+            android:layout_marginTop="16dp"
+            android:background="@mipmap/bg_btn"
+            android:text="添加商品到明细"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"/>
+    </RelativeLayout>
+</LinearLayout>

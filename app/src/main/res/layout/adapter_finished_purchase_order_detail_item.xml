@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/area"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="@dimen/text_size_12sp"
+        android:text="产地:浙江杭州" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/stander"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="@dimen/text_size_12sp"
+        android:text="规格: 1型" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/count"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="@dimen/text_size_12sp"
+        android:text="200元*50条" />
+
+
+</LinearLayout>

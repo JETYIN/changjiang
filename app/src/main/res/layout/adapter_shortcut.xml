@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:layout_marginBottom="8dp"
+              android:layout_marginTop="8dp"
+              android:background="@mipmap/list_bg"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+    <CheckBox
+        android:id="@+id/status"
+        style="@style/CheckBoxCho"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="XXXXXXXXx"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_16sp"/>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bg">
+
+    <include layout="@layout/layout_commen_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_top"
+        android:layout_marginTop="@dimen/common_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="@dimen/common_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="left"
+                android:minEms="3"
+                android:text="客户："
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_14sp"/>
+
+            <TextView
+                android:id="@+id/selectType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:background="@mipmap/top_input"
+                android:drawableRight="@mipmap/list_more"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_half_margin"
+                android:text="重点客户"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="@dimen/common_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="left"
+                android:text="区域："
+                android:minEms="3"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_14sp"/>
+
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:background="@mipmap/top_input"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_half_margin"
+                android:hint="输入区域关键信息"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_marginRight="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="@dimen/common_margin"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@mipmap/bg_btn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

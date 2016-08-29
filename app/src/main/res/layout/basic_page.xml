@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_top"
+        style="@style/TitleStyle">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="8dp"
+            android:text="快捷菜单"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            android:padding="8dp"
+            android:src="@mipmap/basic_setting"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_top"
+        android:background="@mipmap/bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/manageProduct"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/list_bg"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/productIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/basic_product"/>
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@+id/productIcon"
+                android:text="商品管理"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"
+                />
+
+            <ImageView
+                android:id="@+id/productNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/productName"
+                android:layout_toRightOf="@+id/productName"
+                android:src="@mipmap/list_new"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/manageStock"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/list_bg"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/stockIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/basic_stock"/>
+
+            <TextView
+                android:id="@+id/stockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@+id/stockIcon"
+                android:text="仓库管理"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"
+                />
+
+            <ImageView
+                android:id="@+id/stockNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/stockName"
+                android:layout_toRightOf="@+id/stockName"
+                android:src="@mipmap/list_new"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_arrow"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@mipmap/list_line"/>
+
+        <RelativeLayout
+            android:id="@+id/manageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@mipmap/list_bg"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/manageAccountIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/basic_logistics"/>
+
+            <TextView
+                android:id="@+id/manageAccountName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@+id/manageAccountIcon"
+                android:text="账户结算管理"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"/>
+
+            <ImageView
+                android:id="@+id/manageAccountNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/manageAccountName"
+                android:layout_toRightOf="@+id/manageAccountName"
+                android:src="@mipmap/list_new"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/manageCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/list_bg"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/customerIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/basic_customer"/>
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@+id/customerIcon"
+                android:text="客户管理"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"
+                />
+
+            <ImageView
+                android:id="@+id/customerNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/customerName"
+                android:layout_toRightOf="@+id/customerName"
+                android:src="@mipmap/list_new"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_arrow"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@mipmap/list_line"/>
+
+        <RelativeLayout
+            android:id="@+id/manageSupplier"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@mipmap/list_bg"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/supplierIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/basic_supplier"/>
+
+            <TextView
+                android:id="@+id/supplierName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@+id/supplierIcon"
+                android:text="供应商管理"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_16sp"
+                />
+
+            <ImageView
+                android:id="@+id/supplierNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/supplierName"
+                android:layout_toRightOf="@+id/supplierName"
+                android:src="@mipmap/list_new"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

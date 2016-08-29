@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_more"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="24dp"
+    android:background="#FAFAFA"
+    android:paddingRight="@dimen/common_margin"
+    android:visibility="gone">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_3"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey_light"
+        android:text="单据日期："/>
+
+    <TextView
+        android:id="@+id/tv_order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/tv_3"
+        android:layout_alignBaseline="@+id/tv_3"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey"
+        android:text="2016-01-17 11:11:11"/>
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_3"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey_light"
+        android:text="单据总金额："/>
+
+    <TextView
+        android:id="@+id/tv_order_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/tv_4"
+        android:layout_alignBaseline="@+id/tv_4"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey"
+        android:text="￥10000.00"/>
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_4"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey_light"
+        android:text="实收金额："/>
+
+    <TextView
+        android:id="@+id/tv_actual_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/tv_5"
+        android:layout_alignBaseline="@+id/tv_5"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey"
+        android:text="￥9000.00"/>
+
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_5"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey_light"
+        android:text="仓库："/>
+
+    <TextView
+        android:id="@+id/tv_warehouse"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/tv_6"
+        android:layout_alignBaseline="@+id/tv_6"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey"
+        android:text="四楼仓库"/>
+
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_6"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey_light"
+        android:text="结算账户："/>
+
+    <TextView
+        android:id="@+id/tv_pay_account"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/tv_7"
+        android:layout_alignBaseline="@+id/tv_7"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/text_grey"
+        android:text="平安卡"/>
+
+    <LinearLayout
+        android:layout_below="@+id/tv_7"
+    android:id="@+id/ll8"
+    android:layout_width="match_parent"
+    android:layout_height="20dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="毛利："
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="+￥1100.00"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/tv_24"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_23"
+                android:textSize="@dimen/text_size_12sp"
+                android:textColor="@color/text_grey"
+                android:text="毛利率："/>
+
+            <TextView
+                android:id="@+id/tv_margin_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tv_24"
+                android:layout_alignBaseline="@+id/tv_24"
+                android:textSize="@dimen/text_size_12sp"
+                android:textColor="@color/text_grey"
+                android:text="20%"/>
+
+        </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

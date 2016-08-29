@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_top"
+        style="@style/TitleStyle">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@mipmap/top_back"/>
+
+        <TextView
+            android:id="@+id/title_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="清空"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/customername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/customernamevalue"
+            android:text="客户："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <EditText
+            android:id="@+id/customernamevalue"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignLeft="@id/start_time_value"
+            android:layout_toRightOf="@id/customername"
+            android:background="@drawable/bg_icon_frame_1dp"
+            android:drawableRight="@mipmap/icon_row_down"
+            android:hint="请选择客户"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/order_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_code_value"
+            android:text="单号："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <EditText
+            android:id="@+id/order_code_value"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignLeft="@+id/start_time_value"
+            android:layout_below="@id/customernamevalue"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/warehouse"
+            android:background="@drawable/bg_icon_frame_1dp"
+            android:hint="输入单号查询"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/start_time_value"
+            android:text="开始日期："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <EditText
+            android:id="@+id/start_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/order_code_value"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/start_time"
+            android:background="@drawable/bg_icon_frame_1dp"
+            android:drawableRight="@mipmap/icon_row_down"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/end_time_value"
+            android:text="开始日期："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <EditText
+            android:id="@+id/end_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/start_time_value"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/end_time"
+            android:background="@drawable/bg_icon_frame_1dp"
+            android:drawableRight="@mipmap/icon_row_down"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_14sp"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@mipmap/btn_bg_blue"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+</LinearLayout>
